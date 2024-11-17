@@ -1,0 +1,108 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">HappyGarden Survery Form</h1>
+    <p id="description">Please fill out the survey form with required information to help us improve!</p>
+    <form id="survey-form">
+      <fieldset>
+<label id="name-label">Enter your name <input id="name" type="text" placeholder="eg. Jamal Khan" size="20" required></label>
+  <label id="email-label" >Enter your email<input id="email" type="email" placeholder="eg. xyz@gmail.com" size="20" required> </label>
+         <label id="number-label">Age<input id="number" type="number" min="7" max="100" size="20" placeholder="eg. 20" required </label>
+           
+        </fieldset>
+        <fieldset>
+          <label for="dropdown">What's your favourite purchase from HappyGarden?
+          <select id="dropdown" name="dropdown">
+            <option value="">select one</option>
+         <option value="1">Fantasy plant pot</option>  
+         <option value="2">Happy seeds</option>  
+         <option value="3">Happy flowers</option>  
+         <option value="">Happy Gardening tools</option>
+      </select>
+      </label>
+      </fieldset>
+      <fieldset>
+      <legend> Are you coming to the HappyGarden Exhibition?</legend>
+      <label for="yes"><input value="yes" name="feedback" type="radio" id="yes" checked/>yes</label>
+      <label for="no"><input value="no" name="feedback" type="radio" id="yes"/>no</label>
+        </fieldset>
+        <fieldset>
+          <legend>What are you looking forward to in our HappyGarden exhibition?</legend>
+          <label for="yes">Mini Garden<input value="yes" name="feedback" type="checkbox" id="yes" checked /></label>
+         <label for="no">The fruit & Veggie Stall<input value="no" name="feedback" type="checkbox" id="no"/> </label>
+        </fieldset>
+<fieldset for="feedback">Provide feedback<textarea id="feedback" name="feedback" rows="3" cols="30" placeholder="I would def recommend HappyGarden to my friends.."></textarea>
+  </fieldset>
+  <input type="submit" id="submit"/>
+        
+      </form>
+    </body>
+</html>
+
+
+** end of undefined **
+
+** start of undefined **
+
+body {
+  background: url(https://i.pinimg.com/564x/f5/38/69/f53869b8b6a0aabca36ef014ca26bb6a.jpg);
+  font-family: Georgia; 
+  padding: 20px;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+h1, p, form  {
+  color: #4f6943;
+}
+label {
+  margin: 0.5rem;
+  display: block
+}
+input[type="submit"] {
+  color: #4f6943;
+  margin: 1em auto;
+  width: 60%;
+  height: 2em;
+  font-size: 1.1rem;
+  display: block;
+  border-color: #d2e0af;
+
+}
+fieldset {
+  margin: 1em auto;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"], textarea {
+  width:100%;
+  margin: 10px 0 0 0;
+  min-height: 2em;
+}
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid; 
+}
+h1, p {
+  text-align: center;
+}
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2rem; 
+  display: block;
+}
+
+
+** end of undefined **
+
